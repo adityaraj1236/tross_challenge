@@ -1,0 +1,220 @@
+<!--
+  Sanitized fixture modeled on LinkedIn's real mobile-rendered profile markup
+  (requested with a mobile User-Agent - see fetcher.py / README section 5),
+  captured while developing this parser against a live authenticated fetch.
+  All names/companies/text below are fictional; only the structural shape
+  (class names, nesting, data attributes) is real.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Profile | LinkedIn</title></head>
+<body>
+<main id="app-container" class="app-container mb-6">
+
+  <section class="basic-profile-section bg-color-background-container pb-2 relative">
+    <div class="object-cover cover-image-container">
+      <div class="absolute top-0 left-0 right-0 bottom-0 overflow-hidden">
+        <img class="w-full h-full relative" aria-label="Member Background Photo"
+             data-delayed-url="https://media.licdn.com/dms/image/v2/COVER/shrink_200_800/0/1?e=1&amp;v=beta&amp;t=cover">
+      </div>
+    </div>
+    <div class="image-and-actions flex justify-between">
+      <figure id="profile-picture-container" class="relative inline-flex">
+        <div class="inline-flex">
+          <img class="inline-block relative hue-web-entity__image"
+               data-delayed-url="https://media.licdn.com/dms/image/v2/PHOTO/profile-displayphoto-shrink_400_400/0/1?e=1&amp;v=beta&amp;t=photo"
+               alt="Profile picture of Jordan Example">
+        </div>
+      </figure>
+    </div>
+    <div class="bg-color-background-container mx-2 mt-2 mb-1">
+      <div class="flex items-center">
+        <h1 class="text-color-text heading-large" dir="ltr">Jordan Example</h1>
+      </div>
+      <div class="body-small text-color-text">
+        <span dir="ltr">Staff Engineer at Example Corp | Building developer tools</span>
+      </div>
+      <div class="body-small text-color-text-low-emphasis">
+        <span class="member-current-company" dir="ltr">
+          Example Corp
+        </span>
+      </div>
+      <div class="body-small text-color-text-low-emphasis">
+        San Francisco Bay Area
+        <span class="dot-separator" aria-hidden="true"></span>
+        <span class="whitespace-nowrap">500+ connections</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative about-section bg-color-background-container p-2 pr-0 mt-1">
+    <h2 class="mb-1.5 body-medium text-color-text">About</h2>
+    <div class="summary-container mr-2">
+      <div class="relative truncated-summary">
+        <div class="body-small text-color-text whitespace-pre-line description truncated" dir="ltr">Backend engineer focused on distributed systems and developer tooling.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="activity-section bg-color-background-container mt-1">
+    <div class="pl-2 pt-2 pb-1.5">
+      <h2 class="mb-1.5 body-medium text-color-text">Activity</h2>
+      <div class="body-xsmall text-color-text-low-emphasis -mt-1.5">
+        4,820 followers
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-color-background-container experience-container py-2 pl-2 mt-1 collapsible-list-container collapsed">
+    <h2 class="mb-1.5 body-medium text-color-text">Experience</h2>
+    <ol>
+      <li class="pb-1.5 relative block break-words profile-entity-lockup last:p-0 last:m-0 visible-entity">
+        <div class="entity-lockup-border">
+          <ul>
+            <li class="pb-1.5 relative block profile-entity-lockup break-words last:p-0 last:m-0 sub-group">
+              <a href="https://www.linkedin.com/company/example-corp?trk=profile-position" class="flex mr-2">
+                <figure class="w-6 h-6 -ml-0.5 mr-1.5 mt-0.5 flex-initial">
+                  <img class="inline-block relative hue-web-entity__image" data-delayed-url="https://media.licdn.com/dms/image/v2/LOGO1/company-logo_100_100/0/1?logo1" alt="Logo of Example Corp">
+                </figure>
+                <div class="pb-1.5 flex-1 self-center">
+                  <div class="body-medium-bold list-item-heading">
+                    <span dir="ltr">Staff Engineer</span>
+                  </div>
+                  <div class="body-small">
+                    <span dir="ltr">Example Corp</span>
+                  </div>
+                  <div class="body-small">
+                    <span class="body-small">Mar 2022
+                      -
+                    </span>
+                    <span class="body-small">Present</span>
+                    <span class="dot-separator" aria-hidden="true"></span>
+                    <span>3 yrs 6 mos</span>
+                  </div>
+                  <div class="text-xs text-color-text-low-emphasis">
+                    <span dir="ltr">San Francisco, California</span>
+                  </div>
+                  <div class="body-small relative top-0.5 break-words truncated-summary" data-truncated-control="expand-experience-description">
+                    <div class="body-small text-color-text whitespace-pre-line description truncated" dir="ltr">Leading the backend platform team; owns service infrastructure and CI/CD.</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="pb-1.5 relative block break-words profile-entity-lockup last:p-0 last:m-0 visible-entity">
+        <div class="entity-lockup-border">
+          <ul>
+            <li class="pb-1.5 relative block profile-entity-lockup break-words last:p-0 last:m-0 sub-group">
+              <a href="https://www.linkedin.com/company/prior-startup?trk=profile-position" class="flex mr-2">
+                <figure class="w-6 h-6 -ml-0.5 mr-1.5 mt-0.5 flex-initial">
+                  <img class="inline-block relative hue-web-entity__image" data-delayed-url="https://media.licdn.com/dms/image/v2/LOGO2/company-logo_100_100/0/1?logo2" alt="Logo of Prior Startup Inc">
+                </figure>
+                <div class="pb-1.5 flex-1 self-center">
+                  <div class="body-medium-bold list-item-heading">
+                    <span dir="ltr">Software Engineer</span>
+                  </div>
+                  <div class="body-small">
+                    <span dir="ltr">Prior Startup Inc</span>
+                  </div>
+                  <div class="body-small">
+                    <span class="body-small">Jun 2019
+                      -
+                    </span>
+                    <span class="body-small">Feb 2022</span>
+                    <span class="dot-separator" aria-hidden="true"></span>
+                    <span>2 yrs 9 mos</span>
+                  </div>
+                  <div class="text-xs text-color-text-low-emphasis">
+                    <span dir="ltr">Remote</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="bg-color-background-container education-container py-2 pl-2 mt-1 collapsible-list-container">
+    <h2 class="mb-1.5 body-medium text-color-text">Education</h2>
+    <ol>
+      <li class="entity-lockup profile-entity-lockup relative break-words last:p-0 last:m-0 visible-entity">
+        <a href="https://www.linkedin.com/school/state-university/?trk=view-organization" class="flex grow mr-2">
+          <figure class="w-6 h-6 -ml-0.5 mr-1.5 mt-0.5 flex-initial">
+            <img class="inline-block relative hue-web-entity__image" data-delayed-url="https://media.licdn.com/dms/image/v2/LOGO3/company-logo_100_100/0/1?logo3" alt="logo of State University">
+          </figure>
+          <div class="pb-1.5 flex-1 self-center">
+            <div class="list-item-heading body-medium-bold text-color-text">
+              <span dir="ltr">State University</span>
+            </div>
+            <div class="body-small text-color-text">
+              <span dir="ltr">B.S.</span>
+              <span class="dot-separator" aria-hidden="true"></span>
+              <span class="body-small text-color-text" dir="ltr">Computer Science</span>
+            </div>
+            <div class="body-small text-color-text-low-emphasis">
+              <span class="body-small">2015
+                -
+              </span>
+              <span class="body-small">2019</span>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ol>
+  </section>
+
+  <section class="bg-color-background-container py-2 pl-2 mt-1 collapsible-list-container skills-container collapsed relative">
+    <h2 class="mb-1.5 body-medium text-color-text">Skills</h2>
+    <ol class="skills-list">
+      <li class="skill-item body-small-bold text-color-text inline-block py-0.5">
+        <span dir="ltr">Python</span>
+        <span class="dot-separator" aria-hidden="true"></span>
+      </li>
+      <li class="skill-item body-small-bold text-color-text inline-block py-0.5">
+        <span dir="ltr">Distributed Systems</span>
+        <span class="dot-separator" aria-hidden="true"></span>
+      </li>
+      <li class="skill-item body-small-bold text-color-text inline-block py-0.5">
+        <span dir="ltr">Python</span>
+        <span class="dot-separator" aria-hidden="true"></span>
+      </li>
+    </ol>
+  </section>
+
+  <section class="bg-color-background-container py-2 pl-2 mt-1 outline-offset-[-2px] accomplishments-section" tabindex="-1">
+    <h2 class="mb-1.5 body-medium text-color-text">Accomplishments</h2>
+    <div id="accomplishments">
+      <h3 class="mb-1 body-medium-bold text-color-text">Certifications</h3>
+      <ul>
+        <li class="sub-list-item relative flex pb-[12px] border-none break-words last:pb-0 visible-entity">
+          <div class="list-item-body">
+            <div class="list-item-heading body-small-bold text-color-text" dir="ltr">AWS Certified Solutions Architect</div>
+            <div class="list-item-detail truncated-summary" dir="ltr">
+              <div class="body-small text-color-text whitespace-pre-line description truncated body-small text-color-text-low-emphasis" dir="ltr">Amazon Web Services</div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <h3 class="mb-1 body-medium-bold text-color-text">Languages</h3>
+      <ul>
+        <li class="sub-list-item relative flex pb-[12px] border-none break-words last:pb-0 visible-entity">
+          <div>
+            <div class="list-item-heading body-small-bold" dir="ltr">English</div>
+          </div>
+        </li>
+        <li class="sub-list-item relative flex pb-[12px] border-none break-words last:pb-0 visible-entity">
+          <div>
+            <div class="list-item-heading body-small-bold" dir="ltr">Spanish</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>

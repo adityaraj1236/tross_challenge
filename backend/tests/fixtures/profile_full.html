@@ -1,0 +1,139 @@
+<!--
+  Sanitized synthetic fixture. This is NOT real LinkedIn output - it is a
+  hand-built approximation of the embedded-JSON hydration shape LinkedIn
+  profile pages use, sized down to exercise every parser branch without
+  depending on live network access or real personal data.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Jane Doe | LinkedIn</title>
+  <meta name="description" content="Senior Software Engineer at Example Corp | San Francisco Bay Area" />
+  <meta property="og:image" content="https://media.example.com/jane-doe.jpg" />
+</head>
+<body>
+  <main>
+    <h1>Jane Doe</h1>
+  </main>
+  <code style="display:none" id="bpr-guid-1">
+  {
+    "data": {"$type": "com.linkedin.restli.common.CollectionResponse"},
+    "included": [
+      {
+        "entityUrn": "urn:li:fs_profile:ACoAA123",
+        "$type": "com.linkedin.voyager.identity.profile.Profile",
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "headline": "Senior Software Engineer at Example Corp",
+        "geoLocationName": "San Francisco Bay Area",
+        "summary": "Backend engineer focused on distributed systems and developer tooling.",
+        "openToWork": false,
+        "followersCount": 4820,
+        "profilePicture": {
+          "rootUrl": "https://media.licdn.com/dms/image/profile/",
+          "artifacts": [
+            {"width": 100, "height": 100, "fileIdentifyingUrlPathSegment": "100_100.jpg"},
+            {"width": 400, "height": 400, "fileIdentifyingUrlPathSegment": "400_400.jpg"}
+          ]
+        }
+      },
+      {
+        "entityUrn": "urn:li:fs_position:(ACoAA123,1)",
+        "$type": "com.linkedin.voyager.identity.profile.Position",
+        "title": "Senior Software Engineer",
+        "companyName": "Example Corp",
+        "locationName": "San Francisco, California",
+        "employmentType": "Full-time",
+        "description": "Leading the backend platform team; owns service infrastructure and CI/CD.",
+        "timePeriod": {"startDate": {"month": 3, "year": 2022}},
+        "*company": "urn:li:fs_miniCompany:1"
+      },
+      {
+        "entityUrn": "urn:li:fs_position:(ACoAA123,2)",
+        "$type": "com.linkedin.voyager.identity.profile.Position",
+        "title": "Software Engineer",
+        "companyName": "Prior Startup Inc",
+        "locationName": "Remote",
+        "employmentType": "Full-time",
+        "description": "Built the initial version of the data pipeline.",
+        "timePeriod": {
+          "startDate": {"month": 6, "year": 2019},
+          "endDate": {"month": 2, "year": 2022}
+        }
+      },
+      {
+        "entityUrn": "urn:li:fs_miniCompany:1",
+        "$type": "com.linkedin.voyager.identity.shared.MiniCompany",
+        "name": "Example Corp",
+        "universalName": "example-corp",
+        "logo": {
+          "rootUrl": "https://media.licdn.com/dms/image/company/",
+          "artifacts": [{"width": 200, "height": 200, "fileIdentifyingUrlPathSegment": "logo_200.png"}]
+        }
+      },
+      {
+        "entityUrn": "urn:li:fs_education:(ACoAA123,1)",
+        "$type": "com.linkedin.voyager.identity.profile.Education",
+        "schoolName": "State University",
+        "degreeName": "B.S.",
+        "fieldOfStudy": "Computer Science",
+        "timePeriod": {
+          "startDate": {"year": 2015},
+          "endDate": {"year": 2019}
+        },
+        "*school": "urn:li:fs_miniSchool:1"
+      },
+      {
+        "entityUrn": "urn:li:fs_miniSchool:1",
+        "$type": "com.linkedin.voyager.identity.shared.MiniSchool",
+        "name": "State University",
+        "universalName": "state-university",
+        "logo": {
+          "rootUrl": "https://media.licdn.com/dms/image/school/",
+          "artifacts": [{"width": 100, "height": 100, "fileIdentifyingUrlPathSegment": "logo_100.png"}]
+        }
+      },
+      {
+        "entityUrn": "urn:li:fs_skill:1",
+        "$type": "com.linkedin.voyager.identity.profile.Skill",
+        "name": "Python",
+        "endorsementCount": 42
+      },
+      {
+        "entityUrn": "urn:li:fs_skill:2",
+        "$type": "com.linkedin.voyager.identity.profile.Skill",
+        "name": "Distributed Systems",
+        "endorsementCount": 17
+      },
+      {
+        "entityUrn": "urn:li:fs_certification:1",
+        "$type": "com.linkedin.voyager.identity.profile.Certification",
+        "name": "AWS Certified Solutions Architect",
+        "authority": "Amazon Web Services",
+        "timePeriod": {"startDate": {"month": 5, "year": 2021}},
+        "licenseNumber": "ABC123XYZ"
+      },
+      {
+        "entityUrn": "urn:li:fs_language:1",
+        "$type": "com.linkedin.voyager.identity.profile.Language",
+        "name": "English",
+        "proficiency": "Native or bilingual proficiency"
+      },
+      {
+        "entityUrn": "urn:li:fs_language:2",
+        "$type": "com.linkedin.voyager.identity.profile.Language",
+        "name": "Spanish",
+        "proficiency": "Professional working proficiency"
+      },
+      {
+        "entityUrn": "urn:li:fs_honor:1",
+        "$type": "com.linkedin.voyager.identity.profile.Honor",
+        "title": "Hackathon Winner",
+        "issuer": "Example Corp",
+        "timePeriod": {"startDate": {"year": 2023}}
+      }
+    ]
+  }
+  </code>
+</body>
+</html>

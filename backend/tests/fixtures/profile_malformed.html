@@ -1,0 +1,13 @@
+<!-- Simulates a page with a broken/truncated embedded JSON blob (e.g. LinkedIn
+     changed the markup mid-migration, or the response was cut off). Parsing
+     must degrade gracefully instead of raising. -->
+<!DOCTYPE html>
+<html lang="en">
+<head><title>LinkedIn</title></head>
+<body>
+  <main></main>
+  <code style="display:none" id="bpr-guid-1">
+  { "data": {"$type": "com.linkedin.restli.common.CollectionResponse"}, "included": [ { "entityUrn":
+  </code>
+</body>
+</html>

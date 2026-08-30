@@ -1,0 +1,27 @@
+<!--
+  Sanitized fixture: only the top card is present, no About/Experience/
+  Education/Skills/Accomplishments sections at all - simulates a very bare
+  profile (or a page that failed to render most sections). Every _from_html
+  parser must degrade to an empty list here, not raise.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Taylor Minimal | LinkedIn</title></head>
+<body>
+<main id="app-container" class="app-container mb-6">
+  <section class="basic-profile-section bg-color-background-container pb-2 relative">
+    <div class="bg-color-background-container mx-2 mt-2 mb-1">
+      <div class="flex items-center">
+        <h1 class="text-color-text heading-large" dir="ltr">Taylor Minimal</h1>
+      </div>
+      <div class="body-small text-color-text">
+        <span dir="ltr">Product Manager</span>
+      </div>
+      <div class="body-small text-color-text-low-emphasis">
+        Austin, Texas, United States
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>
